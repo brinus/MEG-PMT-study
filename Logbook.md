@@ -37,3 +37,35 @@ Abbiamo inoltre capito che le scale orizzontali delle *WF* sono in ns.
 Notare che `peakBin` prende il bin con il picco (**NEGATIVO**), per questo motivo utilizza il metodo `GetBinMinimum()` quando definisce `peakBin`. 
 
 Rimane da capire quale sia la scala sull'asse orizzontale nel branch `area` e `area2`, e da capire come mai ci sia un fattore moltiplicativo di ~1/20 dalla scala di *Gated charge* a quella di `area`.
+
+## 27 settembre 2022
+
+Vogliamo fare lo scan in *HV* a step di 0.2 V. Controlliamo prima il rate, posizionata la sorgente di 90Sr: il rate vale ~3.5 kHz. Il nome di questi file sarà `scanHV.xx.dat` dove `xx` è il valore del voltaggio in V. Variamo il valore di *HV* lo facciamo variare tra 58 e 60 V. Ogni file ha 10000 entries.
+
+Quando andiamo ad impostare il voltaggio, benchè andiamo di 0.2 in 0.2 (partendo da 58.0), l'*HV* assume un valore leggermente superiore (ordine di 0.1-0.2 V). Il valore della resistenza *POT* è di 0.491 kOhm.
+
+1. 58.2 V
+2. 58.3 V
+3. 58.5 V
+4. 58.7 V
+5. 58.9 V
+6. 59.1 V
+7. 59.3 V
+8. 59.5 V
+9. 59.7 V
+10. 59.9 V
+11. 60.1 V
+
+Facciamo uno scan in *POT*, da 0.7 a 0.3 kOhm a passi di 50 Ohm. Fissiamo la *HV* a 59.0 V (-> 59.1 V). I file si chiameranno `scanPOT.xx.dat`, dove xx è il valore della resistenza sul potenziometro in Ohm.
+
+1. 717
+2. 648
+3. 606
+4. 546
+5. 497
+6. 444
+7. 406
+8. 352
+9. 302
+
+
