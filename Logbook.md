@@ -110,4 +110,43 @@ distanza [cm] | B [mT] |
  19| 0.391 |
  20| 0.313 |
 
+### Riproducibilità delle misure fatte
+Posizioniamo il cilindro argentato e l'asta. Inseriamo il fermo per il ciclindro con il tape, inseriamo il cilindro stesso al centro di quello argentato 
+ e poi al suo interno la sonda. Posizioniamo il magnete nel primo punto in cui vogliamo misurare il campo e facciamo scendere la sonda nel cilindro, fermandola all'altezza in cui il campo magnetico è maggiore e che quindi ci aspettiamo sia il punto allineato (più vicino) al magnete.
+
+Decidiamo di togliere il cilindro argentato, che adesso non serve. Prima abbiamo inserito la sonda in modo che fosse alla stessa altezza del magnete e subito dopo abbiamo inserito il cilindro che la contiene, posizionandolo sul tavolo in verticale.
+
+Posizioniamo il magnete accanto alla scala con i centimetri e poi la sonda in orizzontale, in modo che sia davanti al magnete. Misuriamo la distanza tra sonda e magnete (1.60  + - 0.05[cm]). A questo punto inseriamo il cilindro con tape. Come incertezza sul campo prendiamo 0.01 [mT] pe rle prime due misure e 0.001 [mT] per le altre.
+
+distanza [cm] | B [mT] | 
+:-------------| :------|
+1 | -53.14 |
+2 | -28.93 |
+3 | -18. 524 |
+4 | - 12.445 |
+5 | -7.797 |
+6 | -5.404 |
+7 | -3.951 |
+8 | -2.971 |
+9 | -2.120 |
+10 | -1.521|
+
+Togliamo il cilindro più grande, controlliamo di nuovo la distanza tra sonda e magnete (sempre 1.6 [cm]) ed inseriamo il cilindro più piccolo. Le incertezze di msiura sono le stesse.
+
+distanza [cm] | B [mT] | 
+:-------------| :------|
+1 | -68.68 |
+2 | -39.90|
+3 | -24.27 |
+4 | -15.370 |
+5 | -10.327 |
+6 | -7.236 |
+7 | -5.240 |
+8 | -3.748 |
+9 | -2.775 |
+10 | -2.038|
+
+
+
+
 
