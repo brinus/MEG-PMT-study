@@ -75,57 +75,59 @@ struct EventHeader {
 };
 
 struct IntegrationWindow {
-   int start;
-   int stop;
+    int start;
+    int stop;
 };
 
 struct Configuration {
-   Configuration();
-   bool firstOfRun;
-   short debug;
-   short sigWF;
-   bool subtractSine;
-   float noiseFrequency;
-   int runMode;
-   float intRise;
-   float intDecay;
-   int run;
-   unsigned int nSampleEvents;
-   unsigned int nSaveEvents;
-   float cfFraction;
-   float leThreshold;
-   std::vector<unsigned int> nChannelsPerBoard;
-   std::vector<IntegrationWindow> integrationWindows;
-   std::vector<float*> timeBinWidth;
-   TFile* theFile;
+    Configuration();
+    bool firstOfRun;
+    short debug;
+    short sigWF;
+    bool subtractSine;
+    float noiseFrequency;
+    int runMode;
+    float intRise;
+    float intDecay;
+    int run;
+    unsigned int nSampleEvents;
+    unsigned int nSaveEvents;
+    float cfFraction;
+    float leThreshold;
+    std::vector<unsigned int> nChannelsPerBoard;
+    std::vector<IntegrationWindow> integrationWindows;
+    std::vector<float*> timeBinWidth;
+    TFile* theFile;
 };
 
 Configuration::Configuration()
 {
-   debug = 0;
-   firstOfRun = true;
-   sigWF = -1;
-   subtractSine = false;
-   noiseFrequency = 50.6e+6 * TMath::TwoPi();
-   //runMode: 0 - DRS, 1 - WDB
-   runMode = 1;
-   cfFraction = 0.2;
-   leThreshold = 0.05;
-   run = 0;
-   nSampleEvents = 2000;
-   nSaveEvents = 0;
-   theFile = 0;
-   intRise = 6;
-   intDecay = 3;
+    debug = 0;
+    firstOfRun = true;
+    sigWF = -1;
+    subtractSine = false;
+    noiseFrequency = 50.6e+6 * TMath::TwoPi();
+    //runMode: 0 - DRS, 1 - WDB
+    runMode = 1;
+    cfFraction = 0.2;
+    leThreshold = 0.05;
+    run = 0;
+    nSampleEvents = 2000;
+    nSaveEvents = 0;
+    theFile = 0;
+    intRise = 6;
+    intDecay = 3;
 }
 
 // ------------------------------- Global Variables --------------------------------
+
 Configuration gCONFIG;
 #define Debug if (gCONFIG.debug) std::cout << "DEBUG L" << __LINE__ << ": "
 #define DEBUG if (gCONFIG.debug > 1) std::cout << "DEBUG L" << __LINE__ << ": "
 #define SAMPLES_PER_WAVEFORM 1024
 
 // -------------------------------- Declarations -----------------------------------
+
 std::ifstream* Initialise(std::string); // nChannelsPerBoard, time header
 int GetIntegrationBounds(std::ifstream*);
 int ReadAnEvent(std::ifstream*, EventHeader&, std::vector<float*>&, std::vector<unsigned short>*); //Read one event
