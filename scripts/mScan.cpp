@@ -13,7 +13,7 @@ void mScan(){
     gStyle->SetOptStat(0);
 
     std::vector<TH1 *> vHist;
-    std::string fName = "scanPOT.";
+    std::string fName = "../scanPOT.";
     std::string fType = ".root";
     std::vector<std::string> vVals = {"302", "352", "406", "444",
                                       "497", "546", "606", "648",
